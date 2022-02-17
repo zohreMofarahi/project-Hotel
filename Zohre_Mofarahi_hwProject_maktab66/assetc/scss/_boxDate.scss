@@ -1,0 +1,106 @@
+.dateEntranceExit{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #111118;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    width:70%;
+    height: max-content;
+    position:relative;
+    top: 450px;
+    left: 10%;
+    padding: 3% 5%;
+
+   
+}
+
+.inputDate {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+
+.arrivel ,.exit ,.rooms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+label{
+    font-size: 12px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+input {
+    padding: 18px 14px;
+    font-size: 20px !important;
+    font-weight: 200;
+    background-color: #1F1F2C;
+    border: 1px solid #1f1f2c !important;
+    color: #ffffff;
+   
+    text-align: center;
+}
+
+.btnRequest {
+    padding: 18px 42px;
+    font-size: 12px !important;
+    line-height: 1.33;
+    border-radius: 0;
+    background-color: transparent;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 30px;
+    line-height: 1.5;
+    border-radius: 0;
+    border: 1px #6fb586 solid;
+    color: #6fb586;
+    display: inline-block;
+   cursor: pointer;
+   	position: relative;
+ 
+}
+
+.btnRequest::before,.btnRequest::after {
+    position:absolute;
+    top:100%;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+.btn--pan {
+
+	overflow: hidden;
+   
+}
+
+.btn--pan::before {
+    content: '';
+    
+	transition: all 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.btn--pan span {
+	position: relative;
+ 
+}
+
+
+.btn--pan:hover::before {
+transform: translate3d(0,-100%,0);
+background-color: #6fb586;
+color: hsl(0, 0%, 100%);
+
+}
+.btn--pan:hover{
+  color: hsl(0, 0%, 100%);
+ 
+}
+
